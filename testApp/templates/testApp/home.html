@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head></head>
+<title></title>
+<body>
+    <h1 style="text-align: center;">Customer Data</h1>
+    <table border="3" align="center">
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>Address</th>
+        </tr>
+        {% for cust in qs %}
+        <tr>
+            <td>{{cust.id}}</td>
+            <td>{{cust.name}}</td>
+            <td>{{cust.address}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
